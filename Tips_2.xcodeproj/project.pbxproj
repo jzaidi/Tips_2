@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD072D881C36DB9B000F1A6A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD072D871C36DB9B000F1A6A /* SettingsViewController.swift */; };
 		BDB5045C1C36C60B00E59C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5045B1C36C60B00E59C42 /* AppDelegate.swift */; };
 		BDB5045E1C36C60B00E59C42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5045D1C36C60B00E59C42 /* ViewController.swift */; };
 		BDB504611C36C60B00E59C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB5045F1C36C60B00E59C42 /* Main.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD072D871C36DB9B000F1A6A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		BDB504581C36C60B00E59C42 /* Tips_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tips_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB5045B1C36C60B00E59C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDB5045D1C36C60B00E59C42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDB5045D1C36C60B00E59C42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		BDB504601C36C60B00E59C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDB504621C36C60B00E59C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDB504651C36C60B00E59C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		BDB5044F1C36C60B00E59C42 = {
 			isa = PBXGroup;
 			children = (
+				BD072D871C36DB9B000F1A6A /* SettingsViewController.swift */,
 				BDB5045A1C36C60B00E59C42 /* Tips_2 */,
 				BDB5046F1C36C60B00E59C42 /* Tips_2Tests */,
 				BDB5047A1C36C60B00E59C42 /* Tips_2UITests */,
@@ -97,11 +100,11 @@
 		BDB5045A1C36C60B00E59C42 /* Tips_2 */ = {
 			isa = PBXGroup;
 			children = (
+				BDB504641C36C60B00E59C42 /* LaunchScreen.storyboard */,
 				BDB5045B1C36C60B00E59C42 /* AppDelegate.swift */,
 				BDB5045D1C36C60B00E59C42 /* ViewController.swift */,
 				BDB5045F1C36C60B00E59C42 /* Main.storyboard */,
 				BDB504621C36C60B00E59C42 /* Assets.xcassets */,
-				BDB504641C36C60B00E59C42 /* LaunchScreen.storyboard */,
 				BDB504671C36C60B00E59C42 /* Info.plist */,
 			);
 			path = Tips_2;
@@ -261,6 +264,7 @@
 			files = (
 				BDB5045E1C36C60B00E59C42 /* ViewController.swift in Sources */,
 				BDB5045C1C36C60B00E59C42 /* AppDelegate.swift in Sources */,
+				BD072D881C36DB9B000F1A6A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +404,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips_2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Tips-2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.tips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -411,10 +419,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips_2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Tips-2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.tips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -485,6 +497,7 @@
 				BDB504821C36C60B00E59C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDB504831C36C60B00E59C42 /* Build configuration list for PBXNativeTarget "Tips_2Tests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +506,7 @@
 				BDB504851C36C60B00E59C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDB504861C36C60B00E59C42 /* Build configuration list for PBXNativeTarget "Tips_2UITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +515,7 @@
 				BDB504881C36C60B00E59C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
